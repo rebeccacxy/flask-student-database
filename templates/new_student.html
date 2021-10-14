@@ -1,0 +1,13 @@
+<doctype html>
+<name>New Entry - Flask Student Database</name>
+<h2>Add Entry</h2>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.name) }}
+        {{ render_field(form.password) }}
+        {{ render_field(form.student_class) }}
+    </dl>
+    <p><input type=submit value=Submit>
+</form>

@@ -1,0 +1,17 @@
+<doctype html>
+<name>Search Results - Flask Student Database</name>
+{{ table }}
+    <br>
+    <form action="/download_student" enctype="multipart/form-data" method="get">
+        <a href="/download/{{ value }}" target="blank"><button>Download student CSV
+            <i class="zmdi zmdi-arrow-right"></i>
+        </button></a>
+    </form>
+    <br>
+    {{ table2 }}
+    <br>
+    <form action="/download_score" enctype="multipart/form-data" method="get">
+        <a href="/download/{{ value }}" target="blank"><button>Download score CSV
+            <i class="zmdi zmdi-arrow-right"></i>
+        </button></a>
+    </form>
