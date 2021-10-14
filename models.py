@@ -1,12 +1,13 @@
 from app import db
 import pandas as pd
+from pathlib import Path
 import os
 
 class Student(db.Model):
     __tablename__ = "students"
     engine = db.get_engine()
 
-    if len(os.listdir("uploads")) > 0 and [file.startswith("student") for file in os.listdir("uploads")]:
+    if Path('uploads').is_dir() and len(os.listdir("uploads")) > 0 and [file.startswith("student") for file in os.listdir("uploads")]:
         # Read CSV with Pandas
         filename = [filename for filename in os.listdir('.') if filename.startswith("student")][0]
         with open(os.path.join('uploads', filename), 'r') as file:
@@ -36,7 +37,7 @@ class Score(db.Model):
     __tablename__ = "scores"
     engine = db.get_engine()  # db is the one from the question
 
-    if len(os.listdir("uploads")) > 0 and [file.startswith("mark") for file in os.listdir("uploads")]:
+    if Path('uploads').is_dir() and len(os.listdir("uploads")) > 0 and [file.startswith("mark") for file in os.listdir("uploads")]:
         filename = [filename for filename in os.listdir('.') if filename.startswith("mark")][0]
         # Read CSV with Pandas
         with open(os.path.join('uploads', filename), 'r') as file:

@@ -11,7 +11,7 @@ import os
 
 init_db()
 
-uploads_dir = os.path.join('uploads')
+uploads_dir = 'uploads'
 if not os.path.exists(uploads_dir):
     os.makedirs(uploads_dir)
 
