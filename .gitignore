@@ -1,2 +1,5 @@
 .idea/
 mystudent.db
+.DS_Store
+uploads/
+output/
