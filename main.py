@@ -101,7 +101,6 @@ def new_score():
     if request.method == 'POST' and form.validate():
         # save the student
         score = Score()
-        print(score.name)
         save_changes_toscore(score, form, new=True)
         flash('Score added successfully!')
         return redirect('/')
