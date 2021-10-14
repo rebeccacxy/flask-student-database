@@ -12,6 +12,7 @@ Users can upload a CSV into the SQL database, make changes and download the upda
 - Delete database entries
 - Download updated database to CSV
 
+&nbsp;
 
 ## Getting Started
 
