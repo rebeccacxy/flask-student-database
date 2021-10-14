@@ -12,7 +12,7 @@ If no CSV file is uploaded, the default CSV files `student1.csv` and `mark1.csv`
 - Search for database entries
 - Edit database entries
 - Delete database entries
-- Download updated database to CSV into outputs/output.csv
+- Download updated database to CSV into `outputs/output.csv`
 
 &nbsp;
 
